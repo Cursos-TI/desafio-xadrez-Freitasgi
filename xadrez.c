@@ -8,6 +8,8 @@ int main() {
     int casasTorre = 5;
     int casasBispo = 5;
     int casasRainha = 8;
+    int casasCavalo = 2;
+    int casaCavalo = 1;
 
     // Movimentação do Bispo
     printf("\nMovimentação do Bispo:\n");
@@ -18,7 +20,7 @@ int main() {
     }
 
     // Implementação de Movimentação da Torre
-    printf("Movimentação da Torre:\n");
+    printf("\nMovimentação da Torre:\n");
     for (int i = 1; i <= casasTorre; i++) {
         printf("Direita (%d)\n", i);
     }
@@ -30,6 +32,21 @@ int main() {
         printf("Esquerda (%d)\n", j);
         j++;
     } while (j <= casasRainha);
+
+    //Implementação de Movimentação do Cavalo
+    printf("\nMovimentação do Cavalo:\n");
+    for(int k = 1; k <= casasCavalo; k++){
+        printf("Baixo \n");
+    }
+
+        int l = 1;
+
+        do {
+            printf("Esquerda (%d)\n", l);
+            l++;
+        } while (l <= casaCavalo);
+
+    printf("\n");
 
     
     return 0;
